@@ -1,0 +1,30 @@
+vcs_exec_command {vcs_cmd.csh}
+set_hwtop -module LPF1s_TB
+ArchitectureFile {/remote/vginterfaces1/us01zebu_config/CONFIG.TD.ZEBU/ZEBU_COMMON_ZS4_4S/config/zse_configuration.tcl}
+design_size -mode AUTO
+
+xtors -add {xtor} -type zemi3
+#zemi3 -module LPF1s_TB_1 -debug true
+#performance -zs4plus true
+zemi3 -support_dollar_display true -module {xtor}
+#synthesis -simon_option_file simon.txt
+synthesis -wls_option_file simon.opt 
+#zemi3 -support_dollar_display true -module {LPF1s_TB} 
+
+#################Review
+clock_delay -module {LPF1s_TB LPF1s xtor} 
+#######################
+#run_manager -number_of_instances 5
+
+dpi_synthesis -enable ALL
+#dpi_synthesis -enable ALC
+system_tasks -task "\$display" -enable
+system_tasks -task "\$finish" -enable
+#probe -rtlname {top.*} -fnmatch true
+#force_dyn -wire {top.*}
+#probe_signals -type dynamic -rtlname {top.*}
+clock_config -clock_name driverfrequency -frequency "1 MHz"
+GridCmd -queue {Zebu} -submit {qrsh -P zebucae -cwd -V -noshell -now no -verbose} -delete {qdel}
+GridCmd -queue {ZebuSynthesis} -submit {qrsh -P zebucae -cwd -V -noshell -now no -verbose} -delete {qdel}
+GridCmd -queue {ZebuIse} -submit {qrsh -P zebucae -cwd -V -noshell -now no -verbose} -delete {qdel}
+GridCmd -queue {DEFAULT_QUEUE} -submit {qrsh -P zebucae -cwd -V -noshell -now no -verbose} -delete {qdel}
