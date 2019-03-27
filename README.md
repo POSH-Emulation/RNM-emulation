@@ -5,9 +5,17 @@ Real number models (RNM) are a mechanism for creating behavioral abstractions of
 
 An RNM example of a low-pass filter is illustrated, showing the RNM (eg.sv), support files (project.utf, simon.opt, constants.vams, Makefile) and the testbench (in the emulation_src folder).  The simulation and emulation folders will be created when run in VCS with the command options -compile:vcs_cmd.sh.  The log file produced is run_log_full_passed.
 
-Steps to run in the emulator are:
-1. source $ZEBU_ROOT/zebu_env.csh
-2. setenv SYSTEMSIM_HOME/u/tools/co-design/v2.3.6/bin/arch/i686_Linux_2.4.2-2
-3. set path=($SYSTEMSIM_HOME $path)
-4. setenv LD_LIBRARY_PATH ${SYSTEMSIM_HOME}:${LD_LIBRARY_PATH}
-5. make run
+The flow is as follows:
+1.  Set ZEBU_ROOT
+2.  % make clean
+3.  To run simulation:
+    % make simulation
+4.  To run emulation:
+    a. Compilation:
+       % make compil
+    b. Log in to an emulator system and type:
+       % source $ZEBU_ROOT/zebu_env.csh
+       % setenv SYSTEMSIM_HOME/u/tools/co-design/v2.3.6/bin/arch/i686_Linux_2.4.2-2/
+       % set path=($SYSTEMSIM_HOME $path)
+       % setenv LD_LIBRARY_PATH ${SYSTEMSIM_HOME}:${LD_LIBRARY_PATH}
+       % make run
