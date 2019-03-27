@@ -1,0 +1,164 @@
+############################################
+################## PROCESS #################
+############################################
+$nbProcess = 1;
+$Process_0 = "default_process";
+
+############################################
+################# xTors PORTS ##############
+############################################
+
+######## xTors features declaration ######
+# $LPF1s_TB.zebu_time_capture::zemi_status_out_port.nbMessMax = -1;
+# $LPF1s_TB.zebu_time_capture::zebu_sendtime_out_port.nbMessMax = -1;
+# $LPF1s_TB.zebu_time_capture::zebu_control_out_port.nbMessMax = -1;
+# $LPF1s_TB.x0::display1_out_port.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_7::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_7::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_0::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_0::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_6::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_6::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_3::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_3::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_1::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_1::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_9::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_9::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_4::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_4::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_8::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_8::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_5::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_5::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_2::ts_runman.zceiMessageOutPort_stat_out.nbMessMax = -1;
+# $LPF1s_TB.ts_runman_2::ts_runman.zceiMessageOutPort_cmd_out.nbMessMax = -1;
+# $zemi3XTorGroup_#groupIndex.processName="#process_name_for_groupIndex_zemi3_xTor_group_list";
+# $zemi3XTorGroup_#groupIndex.xtorList="#zemi3_xTor_group_list";
+# where #groupIndex is between 0 and 63
+
+############################################
+################## SYSTEM CLOCKS ###########
+############################################
+
+######## System frequency declaration (MHz) ########
+$idelClk.Frequency = 200000;
+$smapClk.Frequency = 100000;
+
+############################################
+################## CLOCKS ##################
+############################################
+
+######## Timing constraint settings declaration ########
+# This allows you to select which automatic timing settings use.
+# $timingSetting = "my_setting";
+# Note : my_setting can be :default | safe | ultra safe | agressive
+# $timingSettingRatio = my_ratio;
+# Note : my_ratio is an additional ratio to apply to the ratio my_setting defines.
+#        It is considered only if timingSetting is set.
+
+######## driverClk declaration (kHz) ########
+# Note :  driverClk <= $sysFrequency/2
+# $driverClk.Frequency = <freq in kHz>;
+# Note: Prefer the "$timingSetting" parameter describes above, to constraint driver clock frequency.
+# WARNING: Don't use "$driverClk.Frequency" parameter when "$timingSetting" parameter is set.
+#          Theses parameters are not compatible !!
+$driverClk.Frequency = 1000;
+$driverClk.MaxFrequency = 1000;
+# Note : number of driverClock cycles while reset is active
+$driverClk.Reset = 0;
+# Note : for no automatic frequency change during FWC set $driverClk.FwcsFrequency = "driverClk.Frequency";
+
+######## New clocks declaration ########
+# This allows you to create a dummy clock (useful for Tracking/Monitoring over sampling)
+# Note : only 16 clocks are available (including your design clocks)
+# $newClock = "U0.M0.dummy_clock";
+#     - No new clock detected -
+
+######## User clocks parameters declaration (kHz) ########
+# This allows you to define your groups parameters
+# $U0.M0.myGroup.Tolerance = "no | yes";
+# $U0.M0.myGroup.TimeStampGroup = "no | yes";
+#
+# This allows you to define your clocks parameters and link clocks in a same group
+# Note : "my_realFreq" is a float kHz value
+# Note : "my_virtFreq" is a decimal kHz value
+# Note : "my_group" is "myGroup" by default
+# $U0.M0.my_clock.Waveform = "_-";
+# $U0.M0.my_clock.Mode = "controlled | delay-controlled";
+# $U0.M0.my_clock.Frequency = my_realFreq;
+# $U0.M0.my_clock.VirtualFrequency = my_virtFreq;
+# $U0.M0.my_clock.GroupName = "my_group";
+# $U0.M0.my_clock.Tolerance = "no | yes";
+#
+# Note : Your design clocks are (possible labels for "my_clock") :
+#     - No clock detected in your design -
+#
+# Your current clocks parameters are :
+
+#
+# Note : Your design clock delay ports are (possible labels for "my_clock") :
+#     - No clock delay port detected in your design -
+#
+# Your current clock delay ports parameters are :
+
+######## User clocks file declaration ########
+# This allows you to define clocks parameters in separate files
+# Note : Your design clocks are (possible labels for "my_clock") :
+#     - No clock detected in your design -
+# $U0.M0.my_clock.File = "my_clock_file";
+# This allows you to define clock delay ports parameters in separate files
+# Note : Your design clock delay ports are (possible labels for "my_clock") :
+#     - No clock delay port detected in your design -
+
+######## zClockSkew declaration ########
+# This allows you to delay the selected clock Skew by "my_zClockSkewTime" nanoseconds.
+# $zClockSkewTime = my_zClockSkewTime;
+# Note: Prefer the "$timingSetting" parameter describes above, to constraint the zClockSkewTime.
+# WARNING: Don't use "$zClockSkewTime" parameter when "$timingSetting" parameter is set.
+#          Theses parameters are not compatible !!
+#
+# Note : Your current zClockSkew is :
+$zClockSkewTime = 80;
+
+######## zClockFilter declaration ########
+# This allows you to delay the selected clock Filter by "my_zClockFilterTime" nanoseconds.
+# $zClockFilterTime = my_zClockFilterTime;
+# Note: Prefer the "$timingSetting" parameter describes above, to constraint the zClockFilterTime.
+# WARNING: Don't use "$zClockFilterTime" parameter when "$timingSetting" parameter is set.
+#          Theses parameters are not compatible !!
+#
+# Note : Your current zClockFilter is :
+$zClockFilterTime = 40;
+
+############################################
+################# MEMORIES #################
+############################################
+
+######## Initialization memory file declaration ########
+# $memoryInitDB = "my_file";
+# $zrmTransactionalMode = #0/1/2;
+
+######## Memories Frequency declaration in kHz ########
+# $ddr.frequency = #value;
+# $ddrTrace.frequency = #value;
+
+############################################
+################# REGISTERS #################
+############################################
+
+######## Initialization register file declaration ########
+# $registerInitDB = "my_file";
+
+############################################
+################# PLUSARGS #################
+############################################
+
+######## Initialization plusargs file declaration ########
+# $plusargs_file = "my_file";
+
+###########################################
+########### rtlClock Tolerance ###########
+###########################################
+$rtlClockToleranceValue = 0;
+

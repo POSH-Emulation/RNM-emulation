@@ -1,0 +1,194 @@
+0 
+43
++define+SIMULATION
++itf+/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/libvirsim.so /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/liberrorinf.so /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/libsnpsmalloc.so /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190325/release-build/verdi/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-Xvcs_run_simv=1
+-Xxlrm=0x800
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-kdb
+-l
+-lca
+-picarchive
+-realport
+-sverilog
+-top
+-wreal
+/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/bin/vcs1
+/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190325/release-build/verdi/share/PLI/VCS/LINUX64/verdi.tab
+LPF1s_TB
+eg.sv
+res_def
+vcs.log
+135
+runlevel=3
+previous=N
+_LMFILES_=/global/etc/modules/files/eda/vcsmx/2018.09-SP1-1:/global/etc/modules/files/eda/verdi/2018.09-SP1-1
+ZEBU_XIL_VIVADO_P3=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/vivado_p3/ids_lite
+ZEBU_XIL_VIVADO_P2=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/vivado_p2/ids_lite
+ZEBU_XIL_VIVADO=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/vivado/ids_lite
+ZEBU_XIL=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/ise/ISE_DS
+ZEBU_TRITON_ZS3=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/triton_zs3
+ZEBU_TRITON_ZS2=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/triton_zs2
+ZEBU_SYSTEM_DIR=/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330
+ZEBU_ROOT=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug
+ZEBU_RESOURCE_AVAIL_TIMEOUT_SECOND=150
+ZEBU_PHYSICAL_LOCATION=U0.HM6
+ZEBU_IP_ROOT_HOME=/remote/vginterfaces1/zebu_ip/ZebuIpRoot_N-2017.12
+ZEBU_IP_ROOT=/remote/vginterfaces1/zebu_ip/ZebuIpRoot_N-2017.12
+ZEBU_DRIVER_PATH=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/drivers
+ZEBU_DEBUG_EXCESS_ERROR_LIMIT=100
+ZEBU_AURA_SW_HOME=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/aura/sw
+ZEBU_AURA_FW_HOME=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/aura/fw
+XTERM_VERSION=X.Org 6.8.99.903(253)
+XTERM_SHELL=/bin/csh
+XTERM_LOCALE=en_US.UTF-8
+XILINX_LOCAL_USER_DATA=no
+VMR_MODE_FLAG=64
+VG_SCHEDULE_MODULES=1
+VGDEVOPS_UGE_ZEBURT_PRINT=_To be fair to others using same emulator, please close this terminal when you are done.__Note: ZEBU_SYSTEM_DIR, ZEBU_M0_PHYSICAL_LOCATION AND ZEBU_DEBUG_EXCESS_ERROR_LIMIT settings are set automatically
+VERDI_HOME=/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190325/release-build/verdi
+VERDI_BITMODE=64-32
+VENDOR=unknown
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=vcs.log
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+U_ROOT=/u
+U_REGRESS=/u/regress
+U_BENCH=/u/bench
+USE_SYSTEMD=true
+UPSTART_JOB=rc
+UPSTART_INSTANCE=
+UPSTART_EVENTS=runlevel
+UNAME=/bin/uname
+TOOL_HOME=/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64
+TCL_LIBRARY_PATH=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/tcl
+TCL_LIBRARY=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/tcl/tcl8.6
+TCLLIBPATH=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/tcl 
+SYSTEMSIM_HOME=/u/tools/co-design/v2.3.6/bin/arch/i686_Linux_2.4.2-2/
+SYNPLIFY_HOME=/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/synplify/SYNPLIFY2018.09/linux64_SYNPLIFY2018.09.20190325/syn201809leosp1_056R
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPYGLASS_HOME=/remote/vtgimages/SAFE/linux64_TD.SPYGLASS/release-build/spyglass/RELEASE/SPYGLASS_HOME
+SNPS_ZEBU_ZFAST_RNM_SYNTHESIS_SUPPORT=1
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_CLANG_PATH=/fs/src/interfaces/LLVM_Project/QSCP/opt/clang-tc/llvm-7.1.0/linux64
+SGE_TASK_STEPSIZE=undefined
+SGE_TASK_LAST=undefined
+SGE_TASK_ID=undefined
+SGE_TASK_FIRST=undefined
+SGE_STDOUT_PATH=/dev/null
+SGE_STDIN_PATH=/dev/null
+SGE_STDERR_PATH=/dev/null
+SGE_STARTER_USE_LOGIN_SHELL=false
+SGE_STARTER_SHELL_START_MODE=unix_behavior
+SGE_STARTER_SHELL_PATH=
+SGE_ROOT=/remote/sge1/default
+SGE_RERUN_REQUESTED=2
+SGE_RERUN_JOB=0
+SGE_O_WORKDIR=/remote/vgch1cae/ritikar/ZeBu/eg
+SGE_O_TZ=:America/New_York
+SGE_O_SHELL=/bin/csh
+SGE_O_PATH=/remote/sge1/default/bin/lx-amd64:/u/regress/INFRA_HOME/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190325/release-build/verdi/bin:/remote/vgscratch1/leigao/BACKOUT_BUILD/TD_REAL_SCO_0310/release-structure/vcs-mx/bin:/remote/vgscratch1/leigao/BACKOUT_BUILD/TD_REAL_SCO_0310/release-structure/vcs-mx/bin:/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/bin:/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/aura/sw/bin/linux64:/remote/vtgimages/SAFE/linux64_TD.SPYGLASS/release-build/spyglass/RELEASE/SPYGLASS_HOME/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190312/release-build/verdi/platform/linux64/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190312/release-build/verdi/bin:/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/confpro/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/synplify/SYNPLIFY2018.09/linux64_SYNPLIFY2018.09.20190312/syn201809leosp1_047R/bin:/remote/vgzebuinterface2/thirdparty/altera/quartus_19_1_B221/quartus/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190312/release-build/vcs-mx/bin:/remote/vtgimages/SAFE/linux_RH6_EM64T_TD_mode64_debug_Engineer/release-structure/vcs-mx/bin:/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.1/release_debug/aura/sw/bin/linux64:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190305/release-build/verdi/platform/linux64/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190305/release-build/verdi/bin:/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.1/release_debug/confpro/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/synplify/SYNPLIFY2018.09/linux64_SYNPLIFY2018.09.20190305/syn201809leosp1_041R/bin:/remote/vgzebuinterface2/thirdparty/altera/quartus_19_1em1_0.08em1_59_patch_pro_linux/quartus/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190304/release-build/vcs-mx/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190226/release-build/verdi/platform/linux64/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190226/release-build/verdi/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/synplify/SYNPLIFY2018.09/linux64_SYNPLIFY2018.09.20190226/syn201809leosp1_036R/bin:/remote/vgzebuinterface2/thirdparty/altera/quartus_19_1em1_0.06em1_59_patch_pro_linux/quartus/bin:/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190226/release-build/vcs-mx/bin:/remote/sge1/default/bin/lx-amd64:/global/apps/verdi_2018.09-SP1-1/bin:/global/apps/vcsmx_2018.09-SP1-1/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/tmp/37312653.1.heavy:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:.:/depot/perforce:/depot/tools/ccollab/bin
+SGE_O_MAIL=/var/spool/mail/ritikar
+SGE_O_LOGNAME=ritikar
+SGE_O_HOST=vgintbw123
+SGE_O_HOME=/u/ritikar
+SGE_JSV_TIMEOUT=100
+SGE_HGR_interactive=1
+SGE_CWD_PATH=/u/ritikar
+SGE_CLUSTER_NAME=us01_uge853_zebutrain
+SGE_CELL=zebutrain
+SGE_BINARY_PATH=/remote/sge1/default/bin/lx-amd64
+SGE_ARCH=lx-amd64
+SGE_ACCOUNT=sge
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RUNLEVEL=3
+RESTARTED=0
+REQUEST=ZEBU_COMMON_ZS4_4S_2_ritikar
+REQNAME=ZEBU_COMMON_ZS4_4S_2_ritikar
+REMOTEUSER=root
+REMOTEHOST=us01lts262.internal.synopsys.com
+QUEUE=q
+QUARTUSPRO_ROOTDIR=/remote/vgzebuinterface2/thirdparty/altera/quartus_19_1_B221/quartus
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PROXIMA_ROOT=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug
+PROBE=/u/regress/INFRA_HOME/probe
+PREVLEVEL=N
+OVA_UUM=0
+OSTYPE=linux
+NSLOTS=1
+NQUEUES=1
+NHOSTS=1
+MODULE_VERSION_STACK=3.1.6
+MODULE_VERSION=3.1.6
+MODULES_RC=/global/etc/modules/modulesrc
+MODULES_PLATFORM=x86_64.Linux.2.6
+MODULESHOME=/global/etc/modules/3.1.6
+MODULEPATH=/global/cust_apps/modulefiles:/global/etc/modules/files/eda:/global/etc/modules/files/eda2:/global/etc/modules/files/flows:/global/cust_apps_sgip001/modulefiles:/global/snps_apps/modulefiles/eda:/global/export_control_apps/modulefiles/eda:/global/etc/modulefiles/freeware/opensource:/global/cust_apps_sgps001/lynx/admin/modulefiles/mc_servers:/global/script_depot/module::/remote/vtghome10/kevork/modulefiles:/remote/vtghome10/kevork/modulefiles:/remote/vtghome10/kevork/modulefiles:/remote/vtghome10/kevork/modulefiles:/remote/vtghome10/kevork/modulefiles:/remote/vtghome10/kevork/modulefiles
+MFLAGS=
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=vcsmx/2018.09-SP1-1:verdi/2018.09-SP1-1
+LIBRARY_PATH=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/lib
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+LANGSH_SOURCED=1
+KDEDIRS=/usr
+JOB_SCRIPT=QRSH
+JOB_NAME=ZEBU_COMMON_ZS4_4S_2_ritikar
+INFRA_HOME=/u/regress/INFRA_HOME
+HOSTTYPE=x86_64-linux
+G_BROKEN_FILENAMES=1
+GROUP=synopsys
+FONTCONFIG_USE_MMAP=0
+ENVIRONMENT=BATCH
+DMTCP_PLUGIN=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/lib/libpthread_join.so:/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.1/release_debug/lib/libpthread_join.so
+DEPOT_TOOLS_PATH=/depot/perforce:/depot/tools/ccollab/bin
+CVS_RSH=ssh
+CONSOLETYPE=vt
+ARC=lx-amd64
+ALTERA_HOME=/remote/vgzebuinterface2/thirdparty/altera/quartus_19_1_B221
+0
+4
+1553029404 constants.vams
+1553520495 eg.sv
+1553510234 /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190325/release-build/verdi/share/PLI/VCS/LINUX64/verdi.tab
+1553570146 /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/vcsdp_lite.tab
+4
+1553571078 /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/libvirsim.so
+1553570713 /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/liberrorinf.so
+1553570679 /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/libsnpsmalloc.so
+1553570711 /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/libvfs.so
+1553697511 simv.daidir
+-1 partitionlib

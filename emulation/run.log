@@ -1,0 +1,538 @@
+
+                                    ZeBu (R)
+                                libZebuZEMI3.so
+
+                          Version O-2019.06-Alpha [D] 
+
+                    Copyright (c) 2002 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+# libZebuZEMI3.so 
+
+# start time is Wed Mar 27 07:38:32 2019
+
+
+
+
+# Build Date : Mar 26 2019 - 01:32:28
+# ---------------------------System Context--------------------------- 
+# Cpu        20 x bogomips - 4799.31 Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz
+#            Load: 1.34 0.65 1.16 1/652 15252
+#            Hostname: vgzeburt330   OS: Linux 2.6.32-696.30.1.el6.x86_64
+# Memory     Total: 128948 MB Free: 89310 MB
+#            Swap space: 129085 MB Free Swap space: 129085 MB
+#            VmSize: 299 MB VmPeak: 299 MB
+# Disk Space Total: 2946 GB Available: 1366 GB Used: 1580 GB
+#            Free inodes: 19119150
+# Stack                                Soft Limit           Hard Limit  
+#            Max stack size            unlimited            unlimited            bytes     
+# -------------------------------------------------------------------- 
+
+
+
+WARNING : "ZEBU_SYSTEM_DIR=/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330" has been evaluated.
+The log file is : "/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330/logs/run/testbench.fwc.vgzeburt330.ritikar.2019_03_27-07_38_32.log".
+Creating symbolic link /remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330/logs/run/testbench.fwc.vgzeburt330.ritikar.2019_03_27-07_38_32.log -> testbench.fwc.vgzeburt330.0.log
+
+                                    ZeBu (R)
+                                    libZebu
+
+                          Version O-2019.06-Alpha [D] 
+
+                    Copyright (c) 2002 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+# Build Date : Mar 26 2019 - 01:34:11
+
+# start time is Wed Mar 27 07:38:32 2019
+
+
+
+
+                                    ZeBu (R)
+                                libHWAccess 64b
+
+                          Version O-2019.06-Alpha [D] 
+
+                    Copyright (c) 2002 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+# "libHWAccess 64b" 
+
+# start time is Wed Mar 27 07:38:32 2019
+
+
+
+
+# Build Date : Mar 26 2019 - 01:35:15
+# ---------------------------System Context--------------------------- 
+# Cpu        20 x bogomips - 4799.31 Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz
+#            Load: 1.34 0.65 1.16 1/652 15253
+#            Hostname: vgzeburt330   OS: Linux 2.6.32-696.30.1.el6.x86_64
+# Memory     Total: 128948 MB Free: 89310 MB
+#            Swap space: 129085 MB Free Swap space: 129085 MB
+#            VmSize: 299 MB VmPeak: 299 MB
+# Disk Space Total: 2946 GB Available: 1366 GB Used: 1580 GB
+#            Free inodes: 19119149
+# Stack                                Soft Limit           Hard Limit  
+#            Max stack size            unlimited            unlimited            bytes     
+# -------------------------------------------------------------------- 
+
+
+-- ZeBu : testbench.fwc : "DEBUG gcc 6.2.0" compilation mode (Mar 26 2019 01:31:51).
+-- ZeBu : testbench.fwc : Task scheduler is enabled to the default value.
+-- ZeBu : testbench.fwc : 	 Can be disabled with the "ZEBU_TASKS_ENABLED" environment variable set to "NO".
+-- ZeBu : testbench.fwc : The number of threads for task scheduler is the default value : 16.
+-- ZeBu : testbench.fwc : 	 Can be forced with the "ZEBU_TASKS_THREADS" environment variable set to the number of expected threads.
+-- ZeBu : testbench.fwc : Task scheduler (libtbb) is enabled and initialized with 16 worker threads.
+#   step INFO : RTLDB version is Build O-2019.06-Alpha Mar 25 2019 (2931538)
+#   step DB LOAD : Loading tree
+#   step HUB : Loading main database in load on demand mode
+#   step DB LOAD : Loading database from path '../zcui.work/zebu.work/zrdb'
+#   step DB LOAD : Opening light tree file '../zcui.work/zebu.work/zrdb/stree.zrdb' to enable load on-demand
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/stree.zrdb' in read mode
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/coords.zrdb' in read mode
+#   step DB LOAD : Loading DB stamp from file '../zcui.work/zebu.work/zrdb/stamp.zrdb'
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/stamp.zrdb' in read mode
+#   step DB LOAD : Version stamp is 1712.1.0
+#   step DB LOAD : The database was generated on : Mon Mar 25 07:23:12 2019
+#   step DB LOAD : Stored database CRC is : 8a1151d
+#   step DB LOAD : Deserializing database : start
+#   step DB LOAD : Database version is 1712.1.0
+#   step DB LOAD : Auxillary databases splitted in 8 wrappers
+#   step DICTIONARY : Opening dictionary
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/dictionary/names.zrdb' in read mode
+#   step DICTIONARY : Opened. 71328 unique names, in 3 chunks of 32768 entries, stored in 1 directories
+#   step COORDS : Loading coordinates database (full)
+#   step COORDS : Reading coordinates database header
+#   step COORDS : Coordinates database contains 312825 entries
+#   step COORDS : Reading coordinates database header (cont'd)
+#   step COORDS : Read coordinates database header complete (0 seconds)
+#   step COORDS : Reading register coordinates
+#   step COORDS : Finished reading 318213 register coordinates in 0 seconds
+#   step COORDS : Loaded coordinates database in 0 seconds (full)
+#   step MEMS : Opening memories database file '../zcui.work/zebu.work/zrdb/mems.zrdb'
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/mems.zrdb' in read mode
+#   step MEMS : Memories database opened
+#   step MEMS : Loading size
+#   step MEMS : Loading size
+#   step MEMS : Loading size
+#   step MEMS : Loading size
+#   step MEMS : Loading size
+#   step MEMS : Loading Index
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step MEMS : Loading Index
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step MEMS : Loading Index
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step MEMS : Loading Index
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step MEMS : Loading Index
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step MEMS : Loading Table
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step MEMS : Loading Table
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step MEMS : Loading Table
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step MEMS : Loading Table
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step MEMS : Loading Table
+#   step MEMS : deserialize table
+#   step MEMS : Finished reading 0 entries in 0 seconds
+#   step DB LOAD : Deserializing tree : start
+#   step DICTIONARY : Loading chunk #0
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/dictionary/0/0.zrdb' in read mode
+#   step DICTIONARY : Reading 32768 entries
+#   step DICTIONARY : Read 32768 entries
+#   step DICTIONARY : Chunk #0 loaded. Added 32768 names.
+#   step DB LOAD : Deserializing tree : finished in 0 seconds
+#   step DB LOAD : Deserializing database : finished in 0 seconds
+#   step DB LOAD : Loading ZebuDB from '../zcui.work/zebu.work/zrdb/ZebuDB.zdb'
+#   step DB LOAD : ZebuDB loaded in 0 seconds
+#   step POWER DOMAIN DB : Loading power domain database from file '../zcui.work/zebu.work/zrdb/power.zrdb'
+#   step POWER DOMAIN DB : Database file '../zcui.work/zebu.work/zrdb/power.zrdb' not found - power domain db not available
+#   step PROPERTY DB : Loading property database from file '../zcui.work/zebu.work/zrdb/properties.zrdb'
+#   step PROPERTY DB : Database file '../zcui.work/zebu.work/zrdb/properties.zrdb' not found - property db not available
+#   step FWC : Loading FWC value sets table
+#   step NameTable : Loading table from file '../zcui.work/zebu.work/zrdb/fwc_value_sets.zrdb'
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/fwc_value_sets.zrdb' in read mode
+#   step NameTable : Deserializing '2' names
+#   step FWC : Loaded FWC value sets table
+-- ZeBu : testbench.fwc : WARNING : "ZEBU_SYSTEM_DIR=/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330" has been evaluated.
+-- ZeBu : testbench.fwc : The "ZEBU_SYSTEM_DIR" is set to "/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330".
+-- ZeBu : testbench.fwc : WARNING : "ZEBU_ROOT=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug" has been evaluated.
+-- ZeBu : testbench.fwc : WARNING : "ZEBU_SYSTEM_DIR=/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330" has been evaluated.
+-- ZeBu : testbench.fwc : The system environment is set for a "ZeBu Server-4" platform.
+
+-- ZeBu : testbench.fwc : Looking for a connection (pid 15250 at Wed 27 3 2019 - 07:38:32) ...
+-- ZeBu : testbench.fwc : "default_process" is a full-capability process working on "/remote/vgch1cae/ritikar/ZeBu/eg/zcui.work/zebu.work".
+-- ZeBu : testbench.fwc : Launching the server, waiting for the connection (max delay 120s).
+
+-- ZeBu : testbench.fwc : WARNING : "ZEBU_ROOT=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug" has been evaluated.
+WARNING : "ZEBU_SYSTEM_DIR=/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330" has been evaluated.
+The log file is : "/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330/logs/run/zServer-G.vgzeburt330.ritikar.2019_03_27-07_38_32.log".
+Creating symbolic link /remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330/logs/run/zServer-G.vgzeburt330.ritikar.2019_03_27-07_38_32.log -> zServer-G.vgzeburt330.0.log
+
+                                    ZeBu (R)
+                                    zServer
+
+                          Version O-2019.06-Alpha [D] 
+
+                    Copyright (c) 2002 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+# /remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug/bin/orion/zServer -zebu.work /remote/vgch1cae/ritikar/ZeBu/eg/zcui.work/zebu.work 
+
+# start time is Wed Mar 27 07:38:32 2019
+
+
+
+
+# Build Date : Mar 26 2019 - 01:35:20
+# ---------------------------System Context--------------------------- 
+# Cpu        20 x bogomips - 4799.31 Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz
+#            Load: 1.34 0.65 1.16 1/655 15258
+#            Hostname: vgzeburt330   OS: Linux 2.6.32-696.30.1.el6.x86_64
+# Memory     Total: 128948 MB Free: 89275 MB
+#            Swap space: 129085 MB Free Swap space: 129085 MB
+#            VmSize: 84 MB VmPeak: 84 MB
+# Disk Space Total: 2946 GB Available: 1366 GB Used: 1580 GB
+#            Free inodes: 19119148
+# Stack                                Soft Limit           Hard Limit  
+#            Max stack size            unlimited            unlimited            bytes     
+# -------------------------------------------------------------------- 
+
+
+
+                                    ZeBu (R)
+                                libHWAccess 64b
+
+                          Version O-2019.06-Alpha [D] 
+
+                    Copyright (c) 2002 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+# "libHWAccess 64b" 
+
+# start time is Wed Mar 27 07:38:32 2019
+
+
+
+
+# Build Date : Mar 26 2019 - 01:35:15
+# ---------------------------System Context--------------------------- 
+# Cpu        20 x bogomips - 4799.31 Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz
+#            Load: 1.34 0.65 1.16 1/655 15259
+#            Hostname: vgzeburt330   OS: Linux 2.6.32-696.30.1.el6.x86_64
+# Memory     Total: 128948 MB Free: 89275 MB
+#            Swap space: 129085 MB Free Swap space: 129085 MB
+#            VmSize: 84 MB VmPeak: 84 MB
+# Disk Space Total: 2946 GB Available: 1366 GB Used: 1580 GB
+#            Free inodes: 19119148
+# Stack                                Soft Limit           Hard Limit  
+#            Max stack size            unlimited            unlimited            bytes     
+# -------------------------------------------------------------------- 
+
+
+-- ZeBu : zServer : "DEBUG gcc 6.2.0" compilation mode (Mar 26 2019 01:31:51).
+-- ZeBu : zServer : WARNING : "ZEBU_SYSTEM_DIR=/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330" has been evaluated.
+-- ZeBu : zServer : The "ZEBU_SYSTEM_DIR" is set to "/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330".
+-- ZeBu : zServer : WARNING : "ZEBU_KERNEL2APPLI_SIGNAL=10" has been evaluated.
+-- ZeBu : zServer : WARNING : "ZEBU_KERNEL2APPLI_SIGNAL=10" has been evaluated.
+-- ZeBu : zServer : WARNING : "ZEBU_ROOT=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug" has been evaluated.
+-- ZeBu : zServer : The system environment is set for a "ZeBu Server-4" platform.
+-- ZeBu : zServer : Looking for a default "designFeatures" file to get the design's features.
+
+-- ZeBu : zServer : WARNING : "ZEBU_PHYSICAL_LOCATION=U0.HM6" has been evaluated.
+-- ZeBu : zServer : Remapping requested by user :
+-- ZeBu : zServer :    U0.HM0 -> U0.HM6
+-- ZeBu : zServer : WARNING : "ZEBU_ROOT=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug" has been evaluated.
+-- ZeBu : zServer : Looking for a connection (pid 15257 at Wed 27 3 2019 - 07:38:32) ...
+-- ZeBu : zServer : WARNING : "ZEBU_RESOURCE_AVAIL_TIMEOUT_SECOND=150" has been evaluated.
+-- ZeBu : zServer : The PCIe connection through board 0 is free.
+
+-- ZeBu : zServer : PCI Driver version detected (0.9.18) is compatible with expected one (0.9.17)
+-- ZeBu : zServer : Write-combining is enabled. 
+-- ZeBu : testbench.fwc : Waiting for the server pid 15257 to register the design.
+-- ZeBu : zServer : Bitstream cache is disabled. 
+-- ZeBu : zServer : WARNING : "ZEBU_SYSTEM_DIR=/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330" has been evaluated.
+-- ZeBu : zServer : Get the connection to board 0 at Wed 27 3 2019 - 07:38:33.
+-- ZeBu : zServer : Connection established (host : "vgzeburt330").
+
+
+-- ZeBu : zServer : Initialization (open) of the "ZeBu Server-4".
+-- ZeBu : zServer : WARNING : "ZEBU_SYSTEM_DIR=/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330" has been evaluated.
+-- ZeBu : zServer : WARNING : "ZEBU_RESOURCE_AVAIL_TIMEOUT_SECOND=150" has been evaluated.
+-- ZeBu : zServer : Design loading in progress (/remote/vgch1cae/ritikar/ZeBu/eg/zcui.work/zebu.work) : 
+
+-- ZeBu : zServer : Loading FPGAs using parallel CPU (20).
+-- ZeBu : zServer :  .
+-- ZeBu : zServer : Design loaded successfully.
+
+#   step : Checking for license ... WAITING#   step : Checking for license ... OK     
+
+-- ZeBu : zServer : Waiting for client(s).
+
+-- ZeBu : testbench.fwc : Bitstream cache is disabled. 
+-- ZeBu : testbench.fwc : WARNING : "ZEBU_SYSTEM_DIR=/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330" has been evaluated.
+-- ZeBu : testbench.fwc : Connection established (host : "vgzeburt330").
+
+-- ZeBu : testbench.fwc : Initializing clocks...
+-- ZeBu : testbench.fwc : Initializing readback...
+-- ZeBu : testbench.fwc : Initializing drivers...
+-- ZeBu : testbench.fwc : Initializing memory banks...
+-- ZeBu : testbench.fwc : Initializing hierarchies...
+-- ZeBu : testbench.fwc : Initializing register banks...
+-- ZeBu : testbench.fwc : zServer has already finish FPGA loading.
+-- ZeBu : testbench.fwc : Initializing triggers...
+-- ZeBu : testbench.fwc : Reading faulty pins file '/remote/vginterfaces1/zebu_system_dir/CONFIG.TD.ZEBU/vgzeburt330/config'
+-- ZeBu : testbench.fwc : Check pins OK
+-- ZeBu : testbench.fwc : Initializing memories ...
+-- ZeBu : testbench.fwc : Setting up driver for managing cycle to time conversions.
+-- ZeBu : testbench.fwc : Registering of user's close callback (0) : a3f38
+-- ZeBu : zServer : The system clock is not yet enabled. The driver clock frequency will be set at the system clock enabling.
+### warning in XTOR LOADING [ZXTOR0199W] : All transactor libraries already exist. ZEMI3 runtime will not build them again. 
+		Note that transactor libraries should be built using the same environment as the emulator hosts.
+		This can happen automatically with ZEMI3Manager::open() if user did not build them explicitly.
+		Please delete them and try again if you see spurious runtime failures.
+
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_0.zrdb' in read mode
+#   step DATABASE : Reading DB '../zcui.work/zebu.work/zrdb/signals_0.zrdb' index (#636 entries)
+#   step DATABASE : Read index OK : 0 seconds.
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_0.zrdb' in read mode
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_1.zrdb' in read mode
+#   step DATABASE : Reading DB '../zcui.work/zebu.work/zrdb/signals_1.zrdb' index (#613 entries)
+#   step DATABASE : Read index OK : 0 seconds.
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_1.zrdb' in read mode
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_2.zrdb' in read mode
+#   step DATABASE : Reading DB '../zcui.work/zebu.work/zrdb/signals_2.zrdb' index (#641 entries)
+#   step DATABASE : Read index OK : 0 seconds.
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_2.zrdb' in read mode
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_3.zrdb' in read mode
+#   step DATABASE : Reading DB '../zcui.work/zebu.work/zrdb/signals_3.zrdb' index (#638 entries)
+#   step DATABASE : Read index OK : 0 seconds.
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_3.zrdb' in read mode
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_4.zrdb' in read mode
+#   step DATABASE : Reading DB '../zcui.work/zebu.work/zrdb/signals_4.zrdb' index (#609 entries)
+#   step DATABASE : Read index OK : 0 seconds.
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_4.zrdb' in read mode
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_5.zrdb' in read mode
+#   step DATABASE : Reading DB '../zcui.work/zebu.work/zrdb/signals_5.zrdb' index (#645 entries)
+#   step DATABASE : Read index OK : 0 seconds.
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_5.zrdb' in read mode
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_6.zrdb' in read mode
+#   step DATABASE : Reading DB '../zcui.work/zebu.work/zrdb/signals_6.zrdb' index (#621 entries)
+#   step DATABASE : Read index OK : 0 seconds.
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_6.zrdb' in read mode
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_7.zrdb' in read mode
+#   step DATABASE : Reading DB '../zcui.work/zebu.work/zrdb/signals_7.zrdb' index (#612 entries)
+#   step DATABASE : Read index OK : 0 seconds.
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_7.zrdb' in read mode
+-- ZeBu : testbench.fwc : ClockLoop: Connecting clock loop tasks generic xtor
+-- ZeBu : testbench.fwc : ClockLoop: There was no clock loop mapping file (../zcui.work/zebu.work/clkLoopMap.lst)
+-- ZeBu : testbench.fwc : 5 xTor ports have been connected (3 HW -> SW, 2 SW -> HW).
+-- ZeBu : testbench.fwc : WARNING : Port "LPF1s_TB.zebu_time_capture::zemi_status_out_port" is not connected.
+-- ZeBu : testbench.fwc : WARNING : Port "LPF1s_TB.zebu_time_capture::zebu_sendtime_out_port" is not connected.
+-- ZeBu : testbench.fwc : WARNING : Port "LPF1s_TB.zebu_time_capture::zebu_control_out_port" is not connected.
+
+
+-- ZeBu : zServer : The value for zClockFilterTime was estimated by Timing Analysis (40 ns).
+-- ZeBu : zServer : The value for zClockSkewTime was estimated by Timing Analysis (80 ns).
+-- ZeBu : zServer : The driverClk frequency is 1 MHz due to "zTime" constraints.
+-- ZeBu : zServer : The used value for zClockSkewTime is 80 ns.
+-- ZeBu : zServer : The used value for zClockFilterTime is 40 ns.
+
+
+
+-- ZeBu : testbench.fwc : The board is initialized,     elapsed:0.2 s      user:0 s    system:0.1 s pid(15250), vmem(1012 m)   pid(15250), vmem(1012 m) 
+#   step DICTIONARY : Loading chunk #1
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/dictionary/0/1.zrdb' in read mode
+#   step DICTIONARY : Reading 32768 entries
+#   step DICTIONARY : Read 32768 entries
+#   step DICTIONARY : Chunk #1 loaded. Added 32768 names.
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+# SNPS: IN = 1
+# SNPS: IN = 0
+### warning in ZEMI3 RUN [ZXTOR0173W] : ZEMI3Manager close called without terminating threads
+
+#   info : ZEMI3 Manager Statistics:
+
+		Number of transactors                   :            1
+		Number of threads managed               :            1
+		Total time in manager                   :        1.012 s
+		Number of iterations in service thread  :            0
+		Number of singleLoop calls              :            0
+
+Statistics on transactor service loops:
+	LPF1s_TB.x0 (xtor)                            1961955 calls
+
+
+Statistics on import and export calls:
+	import $display (LPF1s_TB.x0)
+		Number of loops                         :           40
+		Number of calls                         :           50
+
+-- ZeBu : testbench.fwc : Task scheduler for ComputeReadbackTable is enabled using libtbb, 1 task using 16 threads.
+		Words (32-bit) from hardware            :          100 (  0.003 Mb/s)
+		Cycles waited in ZeBu for tx            :           50 (  1.000 per call)
+
+-- ZeBu : testbench.fwc : Execution of user's close callback (0) : a3f38
+-- ZeBu : testbench.fwc : Statistics on message ports and co-simulation drivers:
+
+Inputs sorted according to their number of exchanged messages:
+	LPF1s_TB.zebu_time_capture zebu_control_in_port                               2 messages              40.00 percent of messages
+	LPF1s_TB.ts_runman_0       ts_runman.zceiMessageInPort_cmd_in                 2 messages              40.00 percent of messages
+	LPF1s_TB.zebu_time_capture zemi_control_in_port                               1 messages              20.00 percent of messages
+	LPF1s_TB.ts_runman_0       ts_runman.zceiMessageInPort_stat_in                0 messages               0.00 percent of messages
+
+
+Outputs sorted according to their number of exchanged messages:
+	LPF1s_TB.x0                display1_out_port                                 50 messages              80.65 percent of messages
+	LPF1s_TB.zebu_time_capture zebu_sendtime_out_port                             7 messages              11.29 percent of messages
+	LPF1s_TB.zebu_time_capture zebu_control_out_port                              2 messages               3.23 percent of messages
+	LPF1s_TB.ts_runman_0       ts_runman.zceiMessageOutPort_cmd_out               2 messages               3.23 percent of messages
+	LPF1s_TB.zebu_time_capture zemi_status_out_port                               1 messages               1.61 percent of messages
+	LPF1s_TB.ts_runman_0       ts_runman.zceiMessageOutPort_stat_out              0 messages               0.00 percent of messages
+
+
+Inputs sorted according to their throughput:
+	LPF1s_TB.ts_runman_0       ts_runman.zceiMessageInPort_cmd_in                10 32-bit words          76.92 percent of process throughput,         320.00 bits/s
+	LPF1s_TB.zebu_time_capture zebu_control_in_port                               2 32-bit words          15.38 percent of process throughput,          64.00 bits/s
+	LPF1s_TB.zebu_time_capture zemi_control_in_port                               1 32-bit words           7.69 percent of process throughput,          32.00 bits/s
+	LPF1s_TB.ts_runman_0       ts_runman.zceiMessageInPort_stat_in                0 32-bit words           0.00 percent of process throughput,           0.00 bits/s
+
+Input throughput:       4.16e+02 bits/s
+
+
+Outputs sorted according to their throughput:
+	LPF1s_TB.zebu_time_capture zebu_sendtime_out_port                           896 32-bit words          87.24 percent of process throughput,       28672.00 bits/s
+	LPF1s_TB.x0                display1_out_port                                100 32-bit words           9.74 percent of process throughput,        3200.00 bits/s
+	LPF1s_TB.ts_runman_0       ts_runman.zceiMessageOutPort_cmd_out              22 32-bit words           2.14 percent of process throughput,         704.00 bits/s
+	LPF1s_TB.zebu_time_capture zebu_control_out_port                              8 32-bit words           0.78 percent of process throughput,         256.00 bits/s
+	LPF1s_TB.zebu_time_capture zemi_status_out_port                               1 32-bit words           0.10 percent of process throughput,          32.00 bits/s
+	LPF1s_TB.ts_runman_0       ts_runman.zceiMessageOutPort_stat_out              0 32-bit words           0.00 percent of process throughput,           0.00 bits/s
+
+Output throughput:       3.29e+04 bits/s
+
+
+-- ZeBu : testbench.fwc : Task scheduler (libtbb) is disabled.
+-- ZeBu : testbench.fwc : Elapsed time waiting for resources: 1 s
+-- ZeBu : testbench.fwc : Elapsed time for initialization   : 8 s
+-- ZeBu : testbench.fwc : Elapsed time for emulation        : 1 s
+-- ZeBu : testbench.fwc : Total elapsed time                : 10 s
+
+
+-- ZeBu : zServer : End of run :
+-- ZeBu : zServer : Unit 0 masterClk cycle counter : 69,164,380 (0x041f5d5c)
+-- ZeBu : zServer : Unit 0 driverClk cycle counter : 1,369,467 (0x0014e57b)
+-- ZeBu : zServer : Unit 0 tickClk edge counter : 1,002 (0x000003ea)
+-- ZeBu : zServer : Unit 0 globalTime counter : 1,000 (0x000003e8)
+
+
+-- ZeBu : testbench.fwc : Waiting for zServer (15257) to stop...
+-- ZeBu : zServer : WARNING : "ZEBU_ROOT=/remote/vgzebun3/NB/linux64_TD.ZEBU_debug.0/release_debug" has been evaluated.
+
+
+-- ZeBu : zServer : Server closed correctly.
+-- ZeBu : testbench.fwc : zServer pid 15257 finished with exit code 0.
+#   step EQUI DB : Closing equi db files
+#   step EQUI DB : Equi db files closed
+#   step DB CLOSE : Closing property db
+#   step DB CLOSE : Closing tree
+#   step DB : Closing database
+#   step ZTREEDB : Closing auxillary signal databases
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_0.zrdb' in read mode
+#   step DB : Database '../zcui.work/zebu.work/zrdb/signals_0.zrdb' closed
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_1.zrdb' in read mode
+#   step DB : Database '../zcui.work/zebu.work/zrdb/signals_1.zrdb' closed
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_2.zrdb' in read mode
+#   step DB : Database '../zcui.work/zebu.work/zrdb/signals_2.zrdb' closed
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_3.zrdb' in read mode
+#   step DB : Database '../zcui.work/zebu.work/zrdb/signals_3.zrdb' closed
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_4.zrdb' in read mode
+#   step DB : Database '../zcui.work/zebu.work/zrdb/signals_4.zrdb' closed
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_5.zrdb' in read mode
+#   step DB : Database '../zcui.work/zebu.work/zrdb/signals_5.zrdb' closed
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_6.zrdb' in read mode
+#   step DB : Database '../zcui.work/zebu.work/zrdb/signals_6.zrdb' closed
+#   step FILE : Opening file '../zcui.work/zebu.work/zrdb/signals_7.zrdb' in read mode
+#   step DB : Database '../zcui.work/zebu.work/zrdb/signals_7.zrdb' closed
+#   step ZTREEDB : Closed auxillary signal databases : 0 seconds
+#   step ZTREEDB : Freeing allocated memory
+#   step MEMS : Closed memories database
+#   step ZTREEDB : Freed allocated memory : 0 seconds
+#   step DB : Closed database : 0 seconds
+#   step DB CLOSE : Closing Zebu database
+#   step DB : Closed ZebuDB

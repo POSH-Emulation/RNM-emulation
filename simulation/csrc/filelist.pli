@@ -1,0 +1,4 @@
+PLI_STUB_OBJS += _vcs_pli_stub_.o
+_vcs_pli_stub_.o: _vcs_pli_stub_.c
+	@$(CC) -I/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/include  -pipe -fPIC    -I/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/include  -fPIC -c -o _vcs_pli_stub_.o _vcs_pli_stub_.c
+	@strip -g _vcs_pli_stub_.o

@@ -1,0 +1,57 @@
+
+                                    ZeBu (R)
+                                 zConvertToFsdb
+
+                          Version O-2019.06-Alpha [D] 
+
+                    Copyright (c) 2002 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+# zConvertToFsdb -i myfwc.ztdb -o myfwc.fsdb --timescale 1ns --zebu-work ../zcui.work/zebu.work 
+
+# start time is Wed Mar 27 07:38:44 2019
+
+
+
+
+# Build Date : Mar 26 2019 - 01:38:50
+# ---------------------------System Context--------------------------- 
+# Cpu        20 x bogomips - 4799.31 Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz
+#            Load: 1.36 0.67 1.16 1/651 15304
+#            Hostname: vgzeburt330   OS: Linux 2.6.32-696.30.1.el6.x86_64
+# Memory     Total: 128948 MB Free: 89304 MB
+#            Swap space: 129085 MB Free Swap space: 129085 MB
+#            VmSize: 333 MB VmPeak: 333 MB
+# Disk Space Total: 2946 GB Available: 1366 GB Used: 1580 GB
+#            Free inodes: 19119140
+# Stack                                Soft Limit           Hard Limit  
+#            Max stack size            unlimited            unlimited            bytes     
+# -------------------------------------------------------------------- 
+
+
+#   step CONVERT : Using RTL clock mode timescale (1s)...
+#   step CONVERT :   Option --timescale is ignored.
+#   step CONVERT : Opening device (U0_HM0_F00)...
+#   step CONVERT : Creating header...
+#   step CONVERT : Converting device...
+#   step CONVERT :    10% done.
+#   step CONVERT :    20% done.
+#   step CONVERT :    30% done.
+#   step CONVERT :    40% done.
+#   step CONVERT :    50% done.
+#   step CONVERT :    60% done.
+#   step CONVERT :    70% done.
+#   step CONVERT :    80% done.
+#   step CONVERT :    90% done.
+#   step CONVERT :   100% done.
+#   step CONVERT : Closing device...
+
+#   exec summary :    0 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
+#   exec summary : wall clock 0m1s, user 0m0.412s, sys 0m0.70s
+#   exec summary : Total memory: 454736 kB - RSS memory: 254180 kB - Data memory: 282888 kB
+#   exec summary : Successful execution
+
+# end time is Wed Mar 27 07:38:45 2019

@@ -1,0 +1,2 @@
+/usr/bin/g++ -m64 -g -fPIC -o testbench.fwc main.fwc.cc -I../zcui.work/zebu.work -I$ZEBU_ROOT/include/ -L$ZEBU_ROOT/lib -lZebuZEMI3 -lZebu -rdynamic ../zcui.work/zebu.work/*.so
+

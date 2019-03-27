@@ -1,0 +1,103 @@
+Command: vcs -full64 -xlrm coerce_nettype -wreal res_def -sverilog eg.sv -lca -debug_access+all \
+-realport -kdb -top LPF1s_TB -l vcs.log -R +define+SIMULATION
+                         Chronologic VCS (TM)
+      Version P-2020.03-Alpha_Full64 -- Wed Mar 27 07:38:28 2019
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'eg.sv'
+Parsing included file 'constants.vams'.
+Back to file 'eg.sv'.
+Top Level Modules:
+       LPF1s_TB
+No TimeScale specified
+Starting vcs inline pass...
+
+2 modules and 0 UDP read.
+recompiling module LPF1s
+recompiling module LPF1s_TB
+Both modules done.
+make[1]: Entering directory `/remote/vgch1cae/ritikar/ZeBu/eg/simulation/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir  -Wl,-rpath=/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib \
+-L/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib \
+-Wl,-rpath-link=./   objs/amcQw_d.o   _14997_archive_1.so  SIM_l.o       rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lnuma -lvirsim \
+-lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/lib/vcs_save_restore_new.o \
+/remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/verdi/TD.VERDI/linux64_TD.VERDI.20190325/release-build/verdi/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/remote/vgch1cae/ritikar/ZeBu/eg/simulation/csrc'
+Command: /remote/vgch1cae/ritikar/ZeBu/eg/simulation/./simv -lca -a vcs.log +define+SIMULATION
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version P-2020.03-Alpha_Full64; Runtime version P-2020.03-Alpha_Full64;  Mar 27 07:38 2019
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+SNPS: IN = 1
+SNPS: IN = 0
+$finish called from file "eg.sv", line 34.
+$finish at simulation time                 1020
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1020
+CPU Time:      0.240 seconds;       Data structure size:   0.0Mb
+Wed Mar 27 07:38:31 2019
+CPU time: .376 seconds to compile + .202 seconds to elab + .330 seconds to link + .278 seconds in simulation

@@ -1,0 +1,7 @@
+Command Line: /remote/vtgimages/STABLE_BUILDS_FOR_ZEBU/vcs/TD/linux_RH6_EM64T_TD_mode64.20190325/release-build/vcs-mx/linux64/bin/elabcom -logdir simv.daidir/elabcomLog -simvdaidir simv.daidir -lib simv.daidir/work -saveLevel -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -top LPF1s_TB -ssv -ssy -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
+uname(Linux vgzeburt330 2.6.32-696.30.1.el6.x86_64 #1 SMP Tue May 22 03:28:18 UTC 2018 x86_64)
+[INFO] error/warning message 'C00380' has been suppressed.
+[INFO] error/warning message 'C00381' has been suppressed.
+[INFO] error/warning message 'C00388' has been suppressed.
+[INFO] error/warning message 'C00389' has been suppressed.
+au time 0.202114 0.013998 0.018997 delta 92160000 92160000 total 195440640 195440640
