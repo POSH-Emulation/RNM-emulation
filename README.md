@@ -9,11 +9,11 @@ The flow is as follows:
 1.  Set ZEBU_ROOT
 2.  % make clean
 3.  To run simulation:
-    % make simulation
+ % make simulation
 4.  To run emulation:
-    a. Compilation:
-       % make compil
-    b. Log in to an emulator system and type:
+ a. Compilation:
+    % make compil
+ b. Log in to an emulator system and type:
        % source $ZEBU_ROOT/zebu_env.csh
        % setenv SYSTEMSIM_HOME/u/tools/co-design/v2.3.6/bin/arch/i686_Linux_2.4.2-2/
        % set path=($SYSTEMSIM_HOME $path)
